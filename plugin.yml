@@ -1,0 +1,18 @@
+name: GroupGlow
+version: 1.0.0
+main: dev.groups.GroupGlow
+api-version: '1.21'
+description: Op-managed groups with colored glow outlines and @groupname selectors.
+commands:
+  group:
+    description: Create, delete and manage groups
+    usage: /group <create|delete|add|remove|list> ...
+    permission: groupglow.admin
+  seegroupglow:
+    description: Turn group glow outlines on or off for everyone
+    usage: /seegroupglow <true|false>
+    permission: groupglow.admin
+permissions:
+  groupglow.admin:
+    description: Use /group and /seegroupglow
+    default: op
